@@ -34,7 +34,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home_dosen.html">
                 <div class="sidebar-brand-text mx-3">ABSENSI</div>
             </a>
             <img src="img/UPH-White.png" alt="" class="logo-image">
@@ -48,7 +48,7 @@
             </div>
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <span class="material-symbols-outlined sidebar-dashboard">dashboard</span>
                     <span>Dashboard</span></a>
@@ -62,6 +62,21 @@
                 MAHASISWA
             </div>
 
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-user-friends	"></i>
+                    <span>Mahasiswa</span>
+                </a>
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <a class="collapse-item active" href="dosen_list_mahasiswa.html">List Mahasiswa</a>
+                        <a class="collapse-item" href="dosen_tambah_mahasiswa.html">Tambah Mahasiswa</a>
+                    </div>
+                </div>
+            </li>
+
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -73,6 +88,7 @@
                     data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
                         <a class="collapse-item" href="utilities-color.html">List Mata Kuliah</a>
+                        <a class="collapse-item" href="utilities-border.html">Tambah Mata Kuliah</a>
                     </div>
                 </div>
             </li>
@@ -87,7 +103,8 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="utilities-color.html">Histori Absensi</a>
+                        <a class="collapse-item" href="dosen_histori_absensi.html">Histori Absensi</a>
+                        <a class="collapse-item" href="dosen_edit_absensi.html">Edit Absensi</a>
                     </div>
                 </div>
             </li>
@@ -236,50 +253,64 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                    <h1 class="h3 mb-4 text-gray-800">List Mahasiswa</h1>
                     <table id="example" class="display cell-border" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Tanggal</th>
-                                <th>Mata Kuliah</th>
-                                <th>Nama Dosen</th>
-                                <th>Ruang</th>
-                                <th>Jam Mulai</th>
-                                <th>Jam Absensi</th>
-                                <th>Status</th>
+                                <th>Nama Mahasiswa</th>
+                                <th>NIM</th>
+                                <th>Semester</th>
+                                <th>Tahun Angkatan</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>2024-02-11</td>
-                                <td>Struktur Data</td>
-                                <td>Kusno Prasetya</td>
-                                <td>B342</td>
-                                <td>08:15</td>
-                                <td>-</td>
-                                <td><span class="badge rounded-pill badge-danger">Tidak Hadir</span></td>
+                                <td>Kelvin</td>
+                                <td>01081210011</td>
+                                <td>8</td>
+                                <td>2021</td>
+                                <td style="display: flex; gap: 5px;">
+                                    <a class="btn btn-success btn-sm" href="" style="width: 90px">Detail</a>
+                                    <a class="btn btn-primary btn-sm" href="dosen_list_mahasiswa_edit.html" style="width: 90px">Edit</a>
+                                    <a class="btn btn-danger btn-sm" href="" style="width: 90px">Non Aktif</a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>2024-02-11</td>
-                                <td>Sistem Basis Data</td>
-                                <td>Arnold Aribowo</td>
-                                <td>B342</td>
-                                <td>13:15</td>
-                                <td>12:45</td>
-                                <td><span class="badge rounded-pill badge-primary">Hadir</span></td>
+                                <td>Nathania Michaela</td>
+                                <td>01081210007</td>
+                                <td>8</td>
+                                <td>2021</td>
+                                <td style="display: flex; gap: 5px;">
+                                    <a class="btn btn-success btn-sm" href="" style="width: 90px">Detail</a>
+                                    <a class="btn btn-primary btn-sm" href="" style="width: 90px">Edit</a>
+                                    <a class="btn btn-danger btn-sm" href="" style="width: 90px">Non Aktif</a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>2024-02-11</td>
-                                <td>Teknologi Web Lanjut</td>
-                                <td>Hery</td>
-                                <td>B356</td>
-                                <td>08:15</td>
-                                <td>08:05</td>
-                                <td><span class="badge rounded-pill badge-primary">Hadir</span></td>
+                                <td>Yoana Sonia</td>
+                                <td>01081210001</td>
+                                <td>8</td>
+                                <td>2021</td>
+                                <td style="display: flex; gap: 5px;">
+                                    <a class="btn btn-success btn-sm" href="" style="width: 90px">Detail</a>
+                                    <a class="btn btn-primary btn-sm" href="" style="width: 90px">Edit</a>
+                                    <a class="btn btn-danger btn-sm" href="" style="width: 90px">Non Aktif</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Zian Carlos</td>
+                                <td>01081210013</td>
+                                <td>8</td>
+                                <td>2021</td>
+                                <td style="display: flex; gap: 5px;">
+                                    <a class="btn btn-success btn-sm" href="" style="width: 90px">Detail</a>
+                                    <a class="btn btn-primary btn-sm" href="" style="width: 90px">Edit</a>
+                                    <a class="btn btn-danger btn-sm" href="" style="width: 90px">Non Aktif</a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
-
                 </div>
                 <!-- /.container-fluid -->
 
@@ -341,13 +372,11 @@
     <script>
         new DataTable('#example', {
             columns: [
-                { data: 'tanggal' },
-                { data: 'mata_kuliah' },
-                { data: 'nama_dosen' },
-                { data: 'ruang' },
-                { data: 'jam_mulai' },
-                { data: 'jam_absensi' },
-                { data: 'status' }
+                { data: 'nama_mahasiswa' },
+                { data: 'nim' },
+                { data: 'semester' },
+                { data: 'angakatan' },
+                { data: 'aksi' }
             ]
         });
     </script>

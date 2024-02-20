@@ -63,15 +63,15 @@
             </div>
 
             <!-- Nav Item - Mahasiswa Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMhs"
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseMhs"
                     aria-expanded="true" aria-controls="collapseMhs">
                     <i class="fas fa-fw fa-user-friends	"></i>
                     <span>Mahasiswa</span>
                 </a>
-                <div id="collapseMhs" class="collapse" aria-labelledby="headingMhs" data-parent="#accordionSidebar">
+                <div id="collapseMhs" class="collapse show" aria-labelledby="headingMhs" data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="admin_list_mahasiswa.php">List Mahasiswa</a>
+                        <a class="collapse-item active" href="admin_list_mahasiswa.php">List Mahasiswa</a>
                         <a class="collapse-item" href="admin_tambah_mahasiswa.php">Tambah Mahasiswa</a>
                     </div>
                 </div>
@@ -118,16 +118,16 @@
             </div>
 
             <!-- Nav Item - Dosen Collapse Menu -->
-            <li class="nav-item acitve">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseDosen"
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDosen"
                     aria-expanded="true" aria-controls="collapseDosen">
                     <i class="fas fa-fw fas fa-user-alt	"></i>
                     <span>Dosen</span>
                 </a>
-                <div id="collapseDosen" class="collapse show" aria-labelledby="headingDosen" data-parent="#accordionSidebar">
+                <div id="collapseDosen" class="collapse" aria-labelledby="headingDosen" data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
                         <a class="collapse-item" href="admin_list_dosen.php">List Dosen</a>
-                        <a class="collapse-item active" href="admin_tambah_dosen.php">Tambah Dosen</a>
+                        <a class="collapse-item" href="admin_tambah_dosen.php">Tambah Dosen</a>
                     </div>
                 </div>
             </li>
@@ -276,25 +276,49 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Tambah Dosen</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Edit User Profile</h1>
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="card">
                                 <div class="card-body">
                                     <form>
                                         <div class="form-group row">
-                                            <label for="inputName" class="col-sm-2 col-form-label">Nama Dosen</label>
+                                            <label for="inputName" class="col-sm-2 col-form-label">Nama Mahasiswa</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="inputName">
+                                                <input type="text" class="form-control" id="inputName" value="Kelvin">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="inputNIM" class="col-sm-2 col-form-label">NIP</label>
+                                            <label for="inputNIM" class="col-sm-2 col-form-label">NIM</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="inputNIM">
+                                                <input type="text" class="form-control" id="inputNIM" value="01081210011">
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn btn-primary tambah_btn">Simpan</button>
+                                        <div class="form-group row">
+                                            <label for="inputSemester" class="col-sm-2 col-form-label">Saat ini Semester</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputSemester" value="8">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputAngkatan" class="col-sm-2 col-form-label">Tahun Angkatan</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputAngkatan" value="2021">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPass" class="col-sm-2 col-form-label">Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="inputPass" value="123">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputKonfirmasiPass" class="col-sm-2 col-form-label">Konfirmasi Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="inputKonfirmasiPass" value="123">
+                                            </div>
+                                        </div>
+                                        <input type="button" onclick="location.href='admin_list_mahasiswa.php'" value="Simpan" class="btn btn-primary tambah_btn" />
                                     </form>
                                 </div>
                             </div>

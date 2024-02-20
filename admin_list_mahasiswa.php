@@ -49,7 +49,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="home_admin.html">
                     <span class="material-symbols-outlined sidebar-dashboard">dashboard</span>
                     <span>Dashboard</span></a>
             </li>
@@ -94,7 +94,7 @@
             </li>
 
             <!-- Nav Item - Absensi Collapse Menu -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAbsensi"
                     aria-expanded="true" aria-controls="collapseAbsensi">
                     <i class="fas fa-fw fas fa-user-friends	"></i>

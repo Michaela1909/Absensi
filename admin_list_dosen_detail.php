@@ -49,7 +49,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="home_admin.html">
                     <span class="material-symbols-outlined sidebar-dashboard">dashboard</span>
                     <span>Dashboard</span></a>
             </li>
@@ -316,7 +316,7 @@
                                 <td>08.15</td>
                                 <td>11.45</td>
                                 <td style="display: flex; gap: 5px;">
-                                    <a class="btn btn-success btn-sm" href="" style="width: 90px">Edit</a>                                
+                                    <a class="btn btn-success btn-sm" href="admin_list_MK_edit.php" style="width: 90px">Edit</a>                                
                                     <a class="btn btn-danger btn-sm" href="" style="width: 90px">Non Aktif</a>
                                 </td>
                             </tr>                 

@@ -34,7 +34,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home_dosen.html">
                 <div class="sidebar-brand-text mx-3">ABSENSI</div>
             </a>
             <img src="img/UPH-White.png" alt="" class="logo-image">
@@ -49,7 +49,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="home_admin.html">
+                <a class="nav-link" href="index.html">
                     <span class="material-symbols-outlined sidebar-dashboard">dashboard</span>
                     <span>Dashboard</span></a>
             </li>
@@ -62,72 +62,49 @@
                 MAHASISWA
             </div>
 
-            <!-- Nav Item - Mahasiswa Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMhs"
-                    aria-expanded="true" aria-controls="collapseMhs">
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-user-friends	"></i>
                     <span>Mahasiswa</span>
                 </a>
-                <div id="collapseMhs" class="collapse" aria-labelledby="headingMhs" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="admin_list_mahasiswa.php">List Mahasiswa</a>
-                        <a class="collapse-item" href="admin_tambah_mahasiswa.php">Tambah Mahasiswa</a>
+                        <a class="collapse-item active" href="dosen_list_mahasiswa.html">List Mahasiswa</a>
+                        <a class="collapse-item" href="dosen_tambah_mahasiswa.html">Tambah Mahasiswa</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - MK Collapse Menu -->
+            <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMK"
-                    aria-expanded="true" aria-controls="collapseMK">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-user-friends	"></i>
                     <span>Mata Kuliah</span>
                 </a>
-                <div id="collapseMK" class="collapse" aria-labelledby="headingMK"
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="admin_list_MK.php">List Mata Kuliah</a>
-                        <a class="collapse-item" href="admin_tambah_MK.php">Tambah Mata Kuliah</a>
+                        <a class="collapse-item" href="utilities-color.html">List Mata Kuliah</a>
+                        <a class="collapse-item" href="utilities-border.html">Tambah Mata Kuliah</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Absensi Collapse Menu -->
+            <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAbsensi"
-                    aria-expanded="true" aria-controls="collapseAbsensi">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fas fa-user-friends	"></i>
                     <span>Absensi</span>
                 </a>
-                <div id="collapseAbsensi" class="collapse" aria-labelledby="headingAbsensi"
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="admin_histori_absensi.php">Histori Absensi</a>
-                        <a class="collapse-item" href="admin_edit_absensi.php">Edit Absensi</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                DOSEN
-            </div>
-
-            <!-- Nav Item - Dosen Collapse Menu -->
-            <li class="nav-item acitve">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseDosen"
-                    aria-expanded="true" aria-controls="collapseDosen">
-                    <i class="fas fa-fw fas fa-user-alt	"></i>
-                    <span>Dosen</span>
-                </a>
-                <div id="collapseDosen" class="collapse show" aria-labelledby="headingDosen" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="admin_list_dosen.php">List Dosen</a>
-                        <a class="collapse-item active" href="admin_tambah_dosen.php">Tambah Dosen</a>
+                        <a class="collapse-item" href="dosen_histori_absensi.html">Histori Absensi</a>
+                        <a class="collapse-item" href="dosen_edit_absensi.html">Edit Absensi</a>
                     </div>
                 </div>
             </li>
@@ -276,25 +253,46 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Tambah Dosen</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Edit Mahasiswa</h1>
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="card">
                                 <div class="card-body">
                                     <form>
                                         <div class="form-group row">
-                                            <label for="inputName" class="col-sm-2 col-form-label">Nama Dosen</label>
+                                            <label for="inputName" class="col-sm-2 col-form-label">Nama Mahasiswa</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="inputName">
+                                                <input type="text" class="form-control" id="inputName" value="Kelvin">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="inputNIM" class="col-sm-2 col-form-label">NIP</label>
+                                            <label for="inputNIM" class="col-sm-2 col-form-label">NIM</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="inputNIM">
+                                                <input type="text" class="form-control" id="inputNIM" value="01081210011">
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn btn-primary tambah_btn">Simpan</button>
+                                        <div class="form-group row">
+                                            <label for="inputSemester" class="col-sm-2 col-form-label">Saat ini Semester</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputSemester" value="8">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputAngkatan" class="col-sm-2 col-form-label">Tahun Angkatan</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputAngkatan" value="2021">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputStatus" class="col-sm-2 col-form-label">Status</label>
+                                            <div class="col-sm-10">
+                                            <select id="status-mhs" name="status_mhs" class="form-control">
+                                                <option value="Aktif">Aktif</option>
+                                                <option value="Non Aktif">Non Aktif</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                        <input type="button" onclick="location.href='dosen_list_mahasiswa.html'" value="Simpan" class="btn btn-primary tambah_btn" />
                                     </form>
                                 </div>
                             </div>

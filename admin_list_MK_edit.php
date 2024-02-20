@@ -49,7 +49,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="home_admin.html">
                     <span class="material-symbols-outlined sidebar-dashboard">dashboard</span>
                     <span>Dashboard</span></a>
             </li>
@@ -276,7 +276,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Edit Mahasiswa</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Edit Mata Kuliah</h1>
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="card">

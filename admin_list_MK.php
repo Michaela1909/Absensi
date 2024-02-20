@@ -49,7 +49,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="home_admin.html">
                     <span class="material-symbols-outlined sidebar-dashboard">dashboard</span>
                     <span>Dashboard</span></a>
             </li>
@@ -329,7 +329,7 @@
                                     <a class="btn btn-success btn-sm" href="admin_list_MK_detail.php" style="width: 90px">Detail</a>
                                     <a class="btn btn-primary btn-sm" href="admin_list_MK_edit.php" style="width: 90px">Edit</a>
                                     <a class="btn btn-danger btn-sm" href="" style="width: 90px">Non Aktif</a>
-                                    <a class="btn btn-warning btn-sm" href="admin_" style="width: 90px">Enroll</a>
+                                    <a class="btn btn-warning btn-sm" href="admin_list_MK_enroll.php" style="width: 90px">Enroll</a>
                                 </td>
                             </tr>
                             <tr>

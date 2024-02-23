@@ -10885,7 +10885,6 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
   background-position: center;
   background-size: cover;
 }
@@ -11331,6 +11330,7 @@ body.sidebar-toggled footer.sticky-footer {
 
 .tambah_btn {
   float: right;
+  color: white;
 }
 
 .status {

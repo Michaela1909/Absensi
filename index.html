@@ -18,7 +18,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -45,15 +45,14 @@
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                            <input type="text" class="form-control form-control-user"
+                                                id="inputNIM" placeholder="NIM">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Password">
                                         </div>                                    
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                        <a href="home_admin.html" class="btn btn-primary btn-user btn-block">
                                             Login
                                         </a>
                                     </form>
@@ -85,6 +84,25 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- login href -->
+    <script>
+        function loginUser() {
+            var nim = document.getElementById('inputNIM').value;
+            var password = document.getElementById('exampleInputPassword').value;
+
+            if (nim === 'admin' && password === '123') {
+                window.location.href = 'home_admin.html';
+            } else if (nim === 'dosen' && password === '123') {
+                window.location.href = 'home_dosen.html';
+            } else if (nim === 'mahasiswa' && password === '123') {
+                window.location.href = 'home_mhs.html';
+            } else {
+                alert('Invalid nim or password. Please try again.');
+            }
+        }
+    </script>
+
 
 </body>
 

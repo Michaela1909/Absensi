@@ -71,24 +71,24 @@
                 </a>
                 <div id="collapseMhs" class="collapse" aria-labelledby="headingMhs" data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="admin_list_mahasiswa.php">List Mahasiswa</a>
-                        <a class="collapse-item" href="admin_tambah_mahasiswa.php">Tambah Mahasiswa</a>
+                        <a class="collapse-item" href="admin_list_mahasiswa.html">List Mahasiswa</a>
+                        <a class="collapse-item" href="admin_tambah_mahasiswa.html">Tambah Mahasiswa</a>
                     </div>
                 </div>
             </li>
 
             <!-- Nav Item - MK Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMK"
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseMK"
                     aria-expanded="true" aria-controls="collapseMK">
                     <i class="fas fa-fw fa-user-friends	"></i>
                     <span>Mata Kuliah</span>
                 </a>
-                <div id="collapseMK" class="collapse" aria-labelledby="headingMK"
+                <div id="collapseMK" class="collapse show" aria-labelledby="headingMK"
                     data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="admin_list_MK.php">List Mata Kuliah</a>
-                        <a class="collapse-item" href="admin_tambah_MK.php">Tambah Mata Kuliah</a>
+                        <a class="collapse-item active" href="admin_list_MK.html">List Mata Kuliah</a>
+                        <a class="collapse-item" href="admin_tambah_MK.html">Tambah Mata Kuliah</a>
                     </div>
                 </div>
             </li>
@@ -103,8 +103,8 @@
                 <div id="collapseAbsensi" class="collapse" aria-labelledby="headingAbsensi"
                     data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="admin_histori_absensi.php">Histori Absensi</a>
-                        <a class="collapse-item" href="admin_edit_absensi.php">Edit Absensi</a>
+                        <a class="collapse-item" href="admin_histori_absensi.html">Histori Absensi</a>
+                        <a class="collapse-item" href="admin_edit_absensi.html">Edit Absensi</a>
                     </div>
                 </div>
             </li>
@@ -118,16 +118,16 @@
             </div>
 
             <!-- Nav Item - Dosen Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseDosen"
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDosen"
                     aria-expanded="true" aria-controls="collapseDosen">
                     <i class="fas fa-fw fas fa-user-alt	"></i>
                     <span>Dosen</span>
                 </a>
-                <div id="collapseDosen" class="collapse show" aria-labelledby="headingDosen" data-parent="#accordionSidebar">
+                <div id="collapseDosen" class="collapse" aria-labelledby="headingDosen" data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-                        <a class="collapse-item active" href="admin_list_dosen.php">List Dosen</a>
-                        <a class="collapse-item" href="admin_tambah_dosen.php">Tambah Dosen</a>
+                        <a class="collapse-item" href="admin_list_dosen.html">List Dosen</a>
+                        <a class="collapse-item" href="admin_tambah_dosen.html">Tambah Dosen</a>
                     </div>
                 </div>
             </li>
@@ -247,18 +247,10 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="admin_edit_user.html">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
-                                </a>
+                                </a>                                
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -276,15 +268,40 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Detail Mata Kuliah Dosen</h1>
-                    <table id="example" class="display cell-border" style="width:100%">
+                    <h1 class="h3 mb-4 text-gray-800">List Mata Kuliah</h1>
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="inputSemester" class=" col-xl-4 col-form-label">Semester</label>
+                                        <div class="col-xl-8">
+                                            <input type="text" class="form-control" id="inputSemester">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputAngkatan" class="col-xl-4 col-form-label">Tahun Angkatan</label>
+                                        <div class="col-xl-8">
+                                            <input type="text" class="form-control" id="inputAngkatan">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-success tambah_btn">Cari</button>
+                                </form>
+                            </div>
+                            &nbsp;                            
+                        </div>
+                        
+                    </div>
+
+                    &nbsp;
+                    <!-- Tabel Mata Kuliah -->
+                    <table id="example" class="display cell-border " style="width:100%">
                         <thead>
                             <tr>
-                                <th>Nama Dosen</th>
                                 <th>Tanggal</th>
                                 <th>Mata Kuliah</th>
-                                <th>Kode MK</th>
                                 <th>Tahun Angkatan</th>
+                                <th>Nama Dosen</th>
                                 <th>Ruang</th>
                                 <th>Jam Mulai</th>
                                 <th>Jam Selesai</th>
@@ -293,33 +310,65 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Arnold Aribowo</td>
                                 <td>2024-02-02 s/d 2024-04-30</td>
-                                <td>Sistem Basis Data</td>
-                                <td>SYS1</td>
-                                <td>2021</td>
+                                <td>Struktur Data</td>
+                                <td>8</td>
+                                <td>Kusno Prasetya</td>
                                 <td>B342</td>
-                                <td>13.15</td>
-                                <td>15.45</td>
-                                <td style="display: flex; gap: 5px;">
-                                    <a class="btn btn-success btn-sm" href="" style="width: 90px">Edit</a>                                
-                                    <a class="btn btn-danger btn-sm" href="" style="width: 90px">Non Aktif</a>
-                                </td>
-                            </tr>  
-                            <tr>
-                                <td>Arnold Aribowo</td>
-                                <td>2024-02-02 s/d 2024-04-30</td>
-                                <td>Studio Pengembangan Web</td>
-                                <td>SYS4</td>
-                                <td>2021</td>
-                                <td>B356</td>
                                 <td>08.15</td>
                                 <td>11.45</td>
                                 <td style="display: flex; gap: 5px;">
-                                    <a class="btn btn-success btn-sm" href="admin_list_MK_edit.php" style="width: 90px">Edit</a>                                
+                                    <a class="btn btn-success btn-sm" href="admin_list_MK_detail.html" style="width: 90px">Detail</a>
+                                    <a class="btn btn-primary btn-sm" href="admin_list_MK_edit.html" style="width: 90px">Edit</a>
                                     <a class="btn btn-danger btn-sm" href="" style="width: 90px">Non Aktif</a>
+                                    <a class="btn btn-warning btn-sm" href="admin_list_MK_enroll.html" style="width: 90px">Enroll</a>
                                 </td>
-                            </tr>                 
+                            </tr>
+                            <tr>
+                                <td>2024-02-02 s/d 2024-04-30</td>
+                                <td>Struktur Data</td>
+                                <td>8</td>
+                                <td>Kusno Prasetya</td>
+                                <td>B342</td>
+                                <td>08.15</td>
+                                <td>11.45</td>
+                                <td style="display: flex; gap: 5px;">
+                                    <a class="btn btn-success btn-sm" href="" style="width: 90px">Detail</a>
+                                    <a class="btn btn-primary btn-sm" href="" style="width: 90px">Edit</a>
+                                    <a class="btn btn-danger btn-sm" href="" style="width: 90px">Non Aktif</a>
+                                    <a class="btn btn-warning btn-sm" href="" style="width: 90px">Enroll</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2024-02-02 s/d 2024-04-30</td>
+                                <td>Struktur Data</td>
+                                <td>8</td>
+                                <td>Kusno Prasetya</td>
+                                <td>B342</td>
+                                <td>08.15</td>
+                                <td>11.45</td>
+                                <td style="display: flex; gap: 5px;">
+                                    <a class="btn btn-success btn-sm" href="" style="width: 90px">Detail</a>
+                                    <a class="btn btn-primary btn-sm" href="" style="width: 90px">Edit</a>
+                                    <a class="btn btn-danger btn-sm" href="" style="width: 90px">Non Aktif</a>
+                                    <a class="btn btn-warning btn-sm" href="" style="width: 90px">Enroll</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2024-02-02 s/d 2024-04-30</td>
+                                <td>Struktur Data</td>
+                                <td>8</td>
+                                <td>Kusno Prasetya</td>
+                                <td>B342</td>
+                                <td>08.15</td>
+                                <td>11.45</td>
+                                <td style="display: flex; gap: 5px;">
+                                    <a class="btn btn-success btn-sm" href="" style="width: 90px">Detail</a>
+                                    <a class="btn btn-primary btn-sm" href="" style="width: 90px">Edit</a>
+                                    <a class="btn btn-danger btn-sm" href="" style="width: 90px">Non Aktif</a>
+                                    <a class="btn btn-warning btn-sm" href="" style="width: 90px">Enroll</a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -383,15 +432,14 @@
     <script>
         new DataTable('#example', {
             columns: [
+                { data: 'tanggal' },
+                { data: 'mata_kuliah' },
+                { data: 'tahun_angkatan' },
                 { data: 'nama_dosen' },
-                { data: 'tanggal'},
-                { data: 'mata_kuliah'},
-                { data: 'kode_MK'},
-                { data: 'tahun_angkatan'},
-                { data: 'ruang'},
-                { data: 'jam_mulai'},
-                { data: 'jam_selesai'},
-                { data: 'aksi' }
+                { data: 'ruang' },
+                { data: 'jam_mulai' },
+                { data: 'jam_selesai' },
+                { data: 'aksi' },
             ]
         });
     </script>
